@@ -9,14 +9,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
+        id: step_one
         uses: actions/checkout@v2.3.1
 
       - name: Install and Build 🔧
+        id: step_two
         run: |
           npm ci
           npm run build
 
       - name: Deploy 🚀
+        id: step_three
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
           branch: gh-pages

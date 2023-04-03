@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".slider").slick({
+  $('.slider').slick({
     // asNavFor: ".reviews__slider-small",
     slidesToScroll: 1,
     autoplay: true,
@@ -7,12 +7,15 @@ $(document).ready(function () {
     slidesToShow: 1,
     infinite: true,
     arrows: false,
+    centerMode: true,
+    centerPadding: '30px',
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          arrows: true,
-          slidesToShow: 2,
+          arrows: false,
+          centerPadding: '50px',
+          slidesToShow: 3,
         },
       },
     ],

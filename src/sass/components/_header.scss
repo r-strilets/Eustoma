@@ -5,7 +5,8 @@
   right: 0;
   height: 80px;
   padding-top: 20px;
-  background-color: #0f930f66;
+  // background-color: #0f930f66;
+  background-color: #000;
   z-index: 100;
   backdrop-filter: blur(6px);
 }
@@ -16,17 +17,24 @@
 }
 .header-logo {
   flex-grow: 1;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 500;
   font-style: italic;
   color: white;
+  @include mq(tablet) {
+    font-size: 32px;
+  }
 }
 .menu {
   display: flex;
   flex-direction: row;
   flex-grow: 0;
   gap: 35px;
-  font-size: 22px;
+  font-size: 16px;
+
+  @include mq(tablet) {
+    font-size: 22px;
+  }
 }
 .menu-list {
   flex-direction: row;
@@ -46,12 +54,18 @@
   text-transform: uppercase;
   color: white;
   background-color: transparent;
-  transform: scale(1);
-  transition: transform 0.5s;
-  box-shadow: 0px 0px 15px 7px rgba(255, 255, 255, 0.75);
+  // transform: scale(1);
+  // transition: transform 0.5s;
+  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.75);
 
   &:hover {
-    transform: scale(1.05);
-    transition: transform 0.5s;
+    // transform: scale(1.05);
+    // transition: transform 0.5s;
+    background: white;
+    color: black;
+  }
+
+  @include mq(tablet) {
+    box-shadow: 0px 0px 15px 7px rgba(255, 255, 255, 0.75);
   }
 }

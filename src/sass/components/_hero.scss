@@ -1,0 +1,19 @@
+.hero {
+  margin-top: 80px;
+}
+.slider-photo {
+  width: 100%;
+  height: calc(100vh - 80px);
+}
+.slider .slick-arrow.slick-prev,
+.slider .slick-arrow.slick-next {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+.slider-item {
+  padding: 0 15px;
+}

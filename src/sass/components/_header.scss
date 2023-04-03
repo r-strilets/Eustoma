@@ -1,0 +1,57 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding-top: 20px;
+  background-color: #0f930f66;
+  z-index: 100;
+  backdrop-filter: blur(6px);
+}
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header-logo {
+  flex-grow: 1;
+  font-size: 32px;
+  font-weight: 500;
+  font-style: italic;
+  color: white;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+  gap: 35px;
+  font-size: 22px;
+}
+.menu-list {
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+  @include mq(mob) {
+    display: none;
+  }
+  @include mq(tablet) {
+    display: flex;
+  }
+}
+.menu-button {
+  padding: 10px 10px;
+  border-radius: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  background-color: transparent;
+  transform: scale(1);
+  transition: transform 0.5s;
+  box-shadow: 0px 0px 15px 7px rgba(255, 255, 255, 0.75);
+
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+  }
+}

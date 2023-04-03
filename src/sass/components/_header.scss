@@ -5,6 +5,7 @@
   right: 0;
   height: 80px;
   padding-top: 20px;
+  color: white;
   // background-color: #0f930f66;
   background-color: #000;
   z-index: 100;
@@ -20,7 +21,7 @@
   font-size: 24px;
   font-weight: 500;
   font-style: italic;
-  color: white;
+
   @include mq(tablet) {
     font-size: 32px;
   }

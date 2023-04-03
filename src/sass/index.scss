@@ -1,8 +1,5 @@
-@import "./utils/mixins";
-@import "./base/basic-value";
+@import './utils/mixins';
+@import './base/basic-value';
 
-@import "./components/header";
-@import "./components/hero";
-body {
-  color: white;
-}
+@import './components/header';
+@import './components/hero';

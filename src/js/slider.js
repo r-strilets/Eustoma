@@ -9,13 +9,22 @@ $(document).ready(function () {
     arrows: false,
     centerMode: true,
     centerPadding: '30px',
+    dots: true,
     responsive: [
       {
         breakpoint: 768,
         settings: {
           arrows: false,
           centerPadding: '50px',
-          slidesToShow: 3,
+          slidesToShow: 2,
+
+          centerMode: true,
+        },
+      },
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3
         },
       },
     ],

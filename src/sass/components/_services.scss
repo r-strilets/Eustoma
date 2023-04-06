@@ -1,0 +1,36 @@
+.services-title {
+  font-size: 35px;
+}
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  @include mq(tablet) {
+    justify-content: space-around;
+  }
+}
+.services-list__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px dashed green;
+  padding: 15px;
+  border-radius: 20px;
+  @include mq(tablet) {
+    flex-direction: row;
+    width: calc((100% - 20px) / 2);
+    min-height: 132px;
+  }
+}
+.services-list__img {
+  width: 50px;
+  height: 50px;
+}
+.services-list__wrapper h3 {
+  margin-top: 5px;
+}
+.services-list__item__sub-list {
+  padding-left: 20px;
+  list-style: revert;
+}

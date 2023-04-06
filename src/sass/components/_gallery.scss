@@ -1,0 +1,53 @@
+.gallery {
+  margin-top: 40px;
+}
+.gallery-title {
+  font-size: 24px;
+  padding-top: 15px;
+  line-height: 1;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+  @include mq(tablet) {
+    width: 680px;
+  }
+}
+
+.slider-photo {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  padding: 0 2px;
+
+  @include mq(tablet) {
+    padding: 0 5px;
+  }
+}
+
+.slider-item {
+  &:hover {
+    cursor: pointer;
+  }
+}
+.slick-dots {
+  position: absolute;
+  bottom: -85px;
+  transform: rotate(270deg);
+  left: 50%;
+  font-size: 0;
+  li {
+    margin: 10px 0;
+  }
+  button {
+    width: 10px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #dfd1d1;
+    outline: 0;
+    background-color: transparent;
+  }
+}
+
+.slick-dots li.slick-active button {
+  background-color: rgb(197, 185, 185);
+}

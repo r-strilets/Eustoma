@@ -5,8 +5,17 @@
 .footer-container {
   padding: 10px 25px;
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @include mq(tablet) {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
-.footer h4 {
+.footer-text h4 {
   margin: 5px 0;
 }
 footer img {

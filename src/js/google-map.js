@@ -22,10 +22,15 @@ function initMap() {
   });
 
   marker.addListener('click', function () {
-    infowindow.open(map, marker);
+    // infowindow.open(map, marker);
+    window.open(
+      'https://www.google.com.ua/maps/dir//49.4440107,27.0009189/@49.4441888,27.0017068,18.29z/data=!4m2!4m1!3e0',
+      '_blank'
+    );
   });
 
   infowindow.open(map, marker);
 }
+
 // initMap();
 window.initMap = initMap;

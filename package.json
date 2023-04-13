@@ -5,7 +5,7 @@
   "homepage": "https://eustoma.km.ua/",
   "scripts": {
     "start": "parcel src/*.html ",
-    "build": "parcel build src/*.html --public-url /Eustoma/"
+    "build": "parcel build src/*.html"
   },
   "repository": {
     "type": "git",

@@ -2,7 +2,7 @@
   "name": "eustoma",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://r-strilets.github.io/Eustoma",
+  "homepage": "https://Eustoma.km.ua/Eustoma",
   "scripts": {
     "start": "parcel src/*.html ",
     "build": "parcel build src/*.html --public-url /Eustoma/"
